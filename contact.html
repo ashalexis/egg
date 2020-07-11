@@ -26,17 +26,17 @@
   </header>
 
     <main>
-      <div id="contact">
+      <div class="form">
+        <h1>Say hi!</h1>
         <form v-on:reset="resetFields" v-on:submit.prevent="submitForm">
-
           <!--NAME-->
           <div class="form-row">
             <div class="form-field">
-              <label for="first-name">First Name:</label>
+              <label for="first-name">First Name</label>
               <input type="text" id="first-name" v-model.trim="firstName" placeholder="Eggy" required />
             </div>
             <div class="form-field">
-              <label for="last-name">Last Name:</label>
+              <label for="last-name">Last Name</label>
               <input type="text" id="last-name" v-model.trim="lastName" placeholder="McMuffin" required />
             </div>
           </div>
@@ -44,7 +44,7 @@
           <!--EMAIL-->
           <div class="form-row">
             <div class="form-field">
-              <label for="email">Email:</label>
+              <label for="email">Email</label>
               <input type="text" id="email" v-model.trim="email" placeholder="you@email.com" required />
             </div>
           </div>
@@ -52,11 +52,11 @@
           <!--MESSAGE-->
           <div class="form-row vertical">
             <label for="message">What's up?</label>
-            <textarea id="message" v-model.trim="message" placeholder="I love eggs" required></textarea>
+            <textarea id="message" v-model.trim="message" placeholder="Like eggs?" required></textarea>
           </div>
 
           <!--SUBMIT-->
-          <div>
+          <div class="button-container">
             <button type="submit" v-bind:disabled="!formIsValid">Submit!</button>
           </div>
         </form>
@@ -66,7 +66,7 @@
     <footer class="flex-container">
       <ul class="footer">
           <li>&copy; Ash Lim, 2020</li>
-          <li><a href="#">Development</a></li>
+          <li><a href="https://github.com/ashalexis/egg">Development</a></li>
       </ul>
   </footer>
 
