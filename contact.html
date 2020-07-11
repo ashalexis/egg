@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Egg</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+    <!--VUE-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+    <script src="./js/contact.js" defer></script>
+  </head>
+
+  <body>
+    <header class="flex-container">
+      <h1 class="logo"><a href="https://simple.wikipedia.org/wiki/Egg_(food)" target="_blank">EGG</a></h1>
+      <ul class="nav">
+          <li id="logo"><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="fun.html">Fun Stuff</a></li>
+          <li><a href="extras.html">Eggs-tras</a></li>
+          <li><a href="contact.html">Say hi!</a></li>
+      </ul>
+  </header>
+
+    <main>
+      <div id="contact">
+        <form v-on:reset="resetFields" v-on:submit.prevent="submitForm">
+
+          <!--NAME-->
+          <div class="form-row">
+            <div class="form-field">
+              <label for="first-name">First Name:</label>
+              <input type="text" id="first-name" v-model.trim="firstName" placeholder="Eggy" required />
+            </div>
+            <div class="form-field">
+              <label for="last-name">Last Name:</label>
+              <input type="text" id="last-name" v-model.trim="lastName" placeholder="McMuffin" required />
+            </div>
+          </div>
+
+          <!--EMAIL-->
+          <div class="form-row">
+            <div class="form-field">
+              <label for="email">Email:</label>
+              <input type="text" id="email" v-model.trim="email" placeholder="you@email.com" required />
+            </div>
+          </div>
+
+          <!--MESSAGE-->
+          <div class="form-row vertical">
+            <label for="message">What's up?</label>
+            <textarea id="message" v-model.trim="message" placeholder="I love eggs" required></textarea>
+          </div>
+
+          <!--SUBMIT-->
+          <div>
+            <button type="submit" v-bind:disabled="!formIsValid">Submit!</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="flex-container">
+      <ul class="footer">
+          <li>&copy; Ash Lim, 2020</li>
+          <li><a href="#">Development</a></li>
+      </ul>
+  </footer>
+
+
+  </body>
+</html>
