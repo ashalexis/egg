@@ -1,0 +1,19 @@
+/*  VARIABLES   */
+:root {
+    --nav-bg: rgb(236, 191, 106);
+    --dark-words: rgb(32, 46, 49);
+    --too-bright: rgb(57, 163, 216);
+    --main-bg: rgba(243, 231, 204, 0.5);
+}
+
+/*  COOKING   */
+main li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin-bottom: 10px;
+    transition: all 0.2s;
+}
+
+main li:hover {
+    font-size: 1.5em;
+}

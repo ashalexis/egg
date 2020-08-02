@@ -1,0 +1,71 @@
+/*  VARIABLES   */
+:root {
+    --nav-bg: rgb(236, 191, 106);
+    --dark-words: rgb(32, 46, 49);
+    --too-bright: rgb(57, 163, 216);
+    --main-bg: rgba(243, 231, 204, 0.5);
+}
+
+/*  TIMER   */
+.options {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.options select {
+    display: inline-block;
+    max-width: 15rem;
+}
+
+.instructions {
+    font-family: 'Open Sans', sans-serif
+}
+
+.show {
+    display: flex;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.timer {
+    display: flex;
+}
+
+.timer-controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.timer-controls button {
+    background-color: white;
+    margin-left: 2rem;
+    margin-bottom: 2%;
+    max-width: 100%;
+    max-height: 5em;
+    border: 1px solid grey;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#custom input {
+    padding: 10px;
+    margin-left: 2rem;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1px auto;
+}
+
+.display h1 {
+    font-size: 100px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}

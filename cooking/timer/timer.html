@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Egg</title>
+    <link href="../../css/main.css" rel="stylesheet" type="text/css">
+    <link href="timer.css" rel="stylesheet" type="text/css">
+
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../egg-favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../egg-favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../egg-favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../egg-favicon/site.webmanifest">
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+          <li class="logo"><a href="https://simple.wikipedia.org/wiki/Egg_(food)" target="_blank">EGG</a></li>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../recipes.html">Recipes</a></li>
+          <li><a href="../../fun.html">Fun Stuff</a></li>
+          <li><a href="../../extras.html">Eggs-tras</a></li>
+          <li><a href="../../contact.html">Say hi!</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Egg Timer</h1>
+      <h2>For all your perfectly cooked egg needs.</h2>
+      <p>This egg timer is designed mainly for boiled eggs, in which the eggs are in your pot, the water has boiled, and you've just turned the heat off.</p>
+      <div class='options'>
+        <p>Other eggs-cooked-in-water include:</p>
+        <select name="eggs" id="eggs">
+          <option disabled selected value>--choose egg--</option>
+          <option value="onsen" data-time="1020">Onsen egg</option>
+          <option value="poached" data-time="210">Poached egg</option>
+        </select>
+      </div>
+      <p>Instructions:<br><span class="instructions"></span></p>
+
+      <div class="show">
+      <div class="timer">
+        <div class="timer-controls">
+          <button data-time="120" class="timer-button">2 minutes: White not set, raw yolk.</button>
+          <button data-time="240" class="timer-button">4 minutes: White fully set, yolk runny.</button>
+          <button data-time="360" class="timer-button">6 minutes: White fully set, yolk mostly set.</button>
+          <button data-time="480" class="timer-button">8 minutes: White fully set, yolk set but tender.</button>
+          <button data-time="600" class="timer-button">10 minutes: All set.</button>
+          <form name="customTime" id="custom">
+            <input type="text" name="minutes" placeholder="Enter in minutes">
+          </form>
+        </div>
+      </div>
+
+      <div class="display">
+        <h1 class="display-time-left">00:00</h1>
+        <button class="clear">Clear</button>
+      </div>
+    </div>
+    </main>
+
+    <footer id="footer">
+      <ul>
+          <li>&copy; Ash Lim, 2020</li>
+          <li><a href="https://github.com/ashalexis/egg" target="_blank">Development</a></li>
+      </ul>
+    </footer>
+
+    <script src="timer.js"></script>
+  </body>
+</html>
